@@ -54,9 +54,9 @@ Follow the steps below to run this project locally.
 
 ### Application Setup
 
-git clone https://github.com/your-username/your-repo-name.git  
+git clone https://github.com/Avisek9/library-management-system.git
 
-cd your-project-folder  
+cd library-management-system
 
 mvn clean install  
 
