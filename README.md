@@ -1,6 +1,6 @@
 # Library Management System
 
-A backend-focused Library Management System built using Spring Boot, Hibernate, and MySQL that provides complete CRUD functionality for managing authors, books, categories, and borrowing-related data through RESTful APIs.
+A backend-focused Library Management System built using Spring Boot, Hibernate, and H2/MySQL that provides complete CRUD functionality for managing authors, books, and categories through RESTful APIs.
 
 This project demonstrates database-driven backend development, REST API design, and application-level data validation.
 
@@ -13,7 +13,8 @@ This project demonstrates database-driven backend development, REST API design, 
   - Books  
   - Categories  
 - REST APIs for storing, updating, retrieving, and deleting library data  
-- Database persistence using Hibernate ORM and MySQL  
+- Database persistence using Hibernate ORM  
+- H2 used for development with easy switching to MySQL for production  
 - Application-level data validation and consistency checks  
 - Clean and scalable backend architecture  
 - Fully testable using Postman  
@@ -30,7 +31,8 @@ This project demonstrates database-driven backend development, REST API design, 
 - Maven  
 
 ### Database
-- MySQL  
+- H2 (Development)  
+- MySQL (Production - Optional)  
 
 ### Tools and Version Control
 - Git  
@@ -47,7 +49,6 @@ Follow the steps below to run this project locally.
 
 - Java  
 - Maven  
-- MySQL  
 - Git  
 
 ---
@@ -65,6 +66,10 @@ mvn spring-boot:run
 The application will start on:
 
 http://localhost:8080  
+
+H2 Console (Optional):
+
+http://localhost:8080/h2-console  
 
 ---
 
@@ -106,6 +111,15 @@ http://localhost:8080
 
 ---
 
+## Switching from H2 to MySQL
+
+- Update database configuration in `application.properties`  
+- Replace H2 JDBC URL with MySQL JDBC URL  
+- Set MySQL username and password  
+- Run the application again  
+
+---
+
 ## Data Validation and Consistency
 
 - Prevents operations on non-existing records  
@@ -128,6 +142,8 @@ http://localhost:8080
 ## Author
 
 Abhishek Sahu  
+GitHub: https://github.com/your-github-username  
+LinkedIn: https://linkedin.com/in/your-linkedin-username  
 
 ---
 
